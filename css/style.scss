@@ -46,14 +46,14 @@ body {
       animation-iteration-count: infinite;
 
       .content {
-        display: none;
+        display: flex;
         align-items: center;
         margin: 0 auto;
         flex-direction: column;
         height: 540px;
         justify-content: space-between;
         .some {
-          display: none;
+          display: flex;
           align-items: center;
           margin: 0 auto;
           flex-direction: column;
@@ -203,7 +203,7 @@ body {
         display: flex;
       }
       .alarm {
-        display: flex;
+        display: none;
         .alarm_content {
           display: flex;
           align-items: start;

@@ -45,7 +45,7 @@ body .out_border .screen {
   animation-iteration-count: infinite;
 }
 body .out_border .screen .content {
-  display: none;
+  display: flex;
   align-items: center;
   margin: 0 auto;
   flex-direction: column;
@@ -53,7 +53,7 @@ body .out_border .screen .content {
   justify-content: space-between;
 }
 body .out_border .screen .content .some {
-  display: none;
+  display: flex;
   align-items: center;
   margin: 0 auto;
   flex-direction: column;
@@ -198,7 +198,7 @@ body .out_border .screen .clock_content.open {
   display: flex;
 }
 body .out_border .screen .alarm {
-  display: flex;
+  display: none;
 }
 body .out_border .screen .alarm .alarm_content {
   display: flex;
