@@ -1,0 +1,312 @@
+@font-face {
+  font-family: Rubik;
+  src: url(./../fonts/Rubik-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+
+  .out_border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: black;
+    height: 585px;
+    width: 339px;
+    margin-top: 50px;
+    border: 8px solid gray;
+    border-radius: 42px;
+    .screen {
+      display: flex;
+      align-items: start;
+      background-color: aliceblue;
+      height: 550px;
+      width: 303px;
+      margin: 0 auto;
+      border-radius: 26px;
+      background-image: url(./../img/bg_1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: padding-box;
+      animation-name: bg;
+      animation-duration: 35s;
+      animation-iteration-count: infinite;
+
+      .content {
+        display: none;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
+        height: 540px;
+        justify-content: space-between;
+        .some {
+          display: none;
+          align-items: center;
+          margin: 0 auto;
+          flex-direction: column;
+          height: 540px;
+          justify-content: space-between;
+          .apps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 15px;
+            .row {
+              justify-content: space-between;
+              width: 265px;
+              display: flex;
+              .app {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 4px;
+                img {
+                  width: 44px;
+                  height: 44px;
+                  cursor: pointer;
+                  transition: all 0.3s;
+                }
+
+                span {
+                  font-size: 12px;
+                  font-weight: 400;
+                  margin: 0 auto;
+                  font-family: Rubik;
+                  margin-top: 6px;
+                  color: white;
+                }
+              }
+            }
+            .end {
+              display: flex;
+              align-items: center;
+              justify-content: start;
+              gap: 33px;
+              img {
+                border-radius: 8px;
+              }
+            }
+          }
+          .block_apps {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            width: 275px;
+            height: 70px;
+            background-color: #aea5a5f6;
+            border-radius: 18px;
+            padding: 0 15px;
+            img {
+              height: 44px;
+              width: 44px;
+              cursor: pointer;
+            }
+            .img_block {
+              display: flex;
+              background-color: green !important;
+              border-radius: 8px;
+              cursor: pointer;
+              img {
+                height: 44px;
+                width: 44px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .clock_content {
+        display: none;
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 18px;
+        align-items: start;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          padding: 3px 4px;
+          border: 0;
+          background-color: rgba(0, 72, 255, 0.415);
+          font-family: Rubik;
+          font-size: medium;
+          font-weight: 700;
+          border-radius: 6px;
+          padding: 4px;
+          color: aliceblue;
+          cursor: pointer;
+          img {
+            width: 16px;
+            height: 12px;
+          }
+        }
+        .clock {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          margin-top: 100px;
+          .time_sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            width: 58px;
+            height: 30px;
+            background-color: rgba(0, 72, 255, 0.415);
+            span {
+              color: aliceblue;
+            }
+          }
+          .hours {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+
+            margin-top: 80px;
+
+            gap: 18px;
+            .elp {
+              background-color: rgba(0, 72, 255, 0.415);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 8px;
+
+              height: 60px;
+              width: 60px;
+              span {
+                font-family: Rubik;
+                font-size: 46px;
+                font-weight: 400;
+                color: aliceblue;
+              }
+            }
+          }
+        }
+      }
+      .clock_content.open {
+        display: flex;
+      }
+      .alarm {
+        display: flex;
+        .alarm_content {
+          display: flex;
+          align-items: start;
+          height: 500px;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 16px;
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 3px 4px;
+            border: 0;
+            background-color: rgba(0, 72, 255, 0.415);
+            font-family: Rubik;
+            font-size: medium;
+            font-weight: 700;
+            border-radius: 6px;
+            padding: 4px;
+            color: aliceblue;
+            cursor: pointer;
+            img {
+              width: 16px;
+              height: 12px;
+            }
+          }
+          .alarm_time {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            height: 120px;
+            position: relative;
+            left: -16px;
+            width: 303px;
+            padding: 10px;
+            gap: 12px;
+            background-color: #c7bebe94;
+            label {
+              font-family: Rubik;
+              font-size: 22px;
+              color: aliceblue;
+              font-weight: 400;
+            }
+            .tima_table {
+              display: flex;
+              gap: 18px;
+              justify-content: space-between;
+              align-items: center;
+              input {
+                font-size: 16px;
+                font-family: Rubik;
+                font-weight: 400;
+                outline: none;
+                border: 0;
+                width: 120px;
+                height: 40px;
+                padding: 6px;
+                border-radius: 6px;
+                background-color: aliceblue;
+              }
+              .btn_alarm {
+                display: flex;
+                align-items: center;
+                width: 120px;
+                height: 40px;
+                padding: 6px;
+                border-radius: 6px;
+                transition: all .4s;
+              }
+              .btn_alarm:hover{
+                background-color: rgb(47, 106, 255);
+                color: rgb(17, 255, 0);
+              }
+            }
+          }
+        }
+      }
+
+      @keyframes bg {
+        0% {
+          background-image: url(./../img/bg_1.jpg);
+        }
+        14% {
+          background-image: url(./../img/bg_2.jpg);
+        }
+        28% {
+          background-image: url(./../img/bg_5.jpg);
+        }
+        42% {
+          background-image: url(./../img/bg_5.jpg);
+        }
+        56% {
+          background-image: url(./../img/bg_2.jpg);
+        }
+        70% {
+          background-image: url(./../img/bg_1.jpg);
+        }
+        100% {
+          background-image: url(./../img/bg_5.jpg);
+        }
+      }
+    }
+  }
+}

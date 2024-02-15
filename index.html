@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="phone">
+      <div class="container">
+        <div class="out_border">
+          <div class="screen">
+            <div class="content">
+              <div class="some">
+                <div class="apps">
+                  <div class="row">
+                    <div class="app">
+                      <img src="./img/setting.png" alt="settings" />
+                      <span>Setttings</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/calendar.png" alt="calendar" />
+                      <span>Calendar</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/notes.png" alt="notes" />
+                      <span class="span_N">Notes</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/camera.png" alt="camere" />
+                      <span>Camera</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="app">
+                      <img src="./img/gmail.webp" alt="settings" />
+                      <span class="span_N"> Mail</span>
+                    </div>
+                    <div class="app" id="btnOpen">
+                      <img src="./img/clock.png" alt="calendar" />
+                      <span class="span_N">Clock</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/gallery_.png" alt="notes" />
+                      <span>Photos</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/hrome_.png" alt="camere" />
+                      <span>Chrome</span>
+                    </div>
+                  </div>
+                  <div class="row end">
+                    <div class="app">
+                      <img src="./img/krilL.png" alt="settings" />
+                      <span class="span_N"> Kril to ...</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/case-converter.jpg" alt="calendar" />
+                      <span class="span_N">Case C..</span>
+                    </div>
+                    <div class="app">
+                      <img src="./img/alarmclock.webp" alt="notes" />
+                      <span>Alarm</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block_apps">
+                    <div class="img_block">
+                      <img src="./img/message.png" alt="" />
+                    </div>
+                    <div class="img_block">
+                      <img src="./img/call_.png" alt="" />
+                    </div>
+                    <img src="./img/safari.png" alt="" />
+                    <img src="./img/setting.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clock_content" id="clock">
+              <button class="close_btn" id="btnClose">
+                <img src="./img/arrow left.png" alt="" />
+                <span>Close</span>
+              </button>
+              <div class="clock">
+                <div class="time_sign">
+                  <span id="pm-am"></span>
+                </div>
+                <div class="hours">
+                  <div class="elp"><span id="hour">ddd</span></div>
+                  <div class="elp"><span id="minute"></span></div>
+                  <div class="elp"><span id="second"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="alarm" id="alarm">
+              <div class="alarm_content">
+                <button class="close_btn" id="btnClose">
+                  <img src="./img/arrow left.png" alt="" />
+                  <span>Close</span>
+                </button>
+
+                <div class="alarm_time">
+                  <label for="time">Alarm Time</label>
+                  <div class="tima_table">
+                    <input type="time" name="time" id="time_input" />
+                    <button class="btn_alarm">Set Alarm</button>
+                  </div>
+                </div>
+                <audio
+                  id="alarm_audio"
+                  type="audio/mp3"
+                  src="./audio/alarm.wav"
+                ></audio>
+                <div class="optional_time">
+                  <button class="btn_snooze"></button>
+                  <button class="btn_stopAlarm"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/alarm.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/krill.js"></script>
+    <script src="./js/clock.js"></script>
+  </body>
+</html>
