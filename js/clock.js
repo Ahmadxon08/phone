@@ -6,17 +6,28 @@ const amPmElement = document.getElementById("pm-am");
 const btnClose = document.getElementById("btnClose");
 const btnOpen = document.getElementById("btnOpen");
 
+const phoneContent = document.querySelector(".some");
+
 const clock = document.querySelector(".clock_content");
 
+// phoneContent.addEventListener("click", function (e) {
+//   phoneContent.classList.add("open");
+//   document.body.style.overflow = "hidden";
+// });
+// phoneContent.addEventListener("click", function (e) {
+//   document.body.style.overflow = "auto";
+// });
+
 btnOpen.addEventListener("click", (e) => {
-  
   clock.classList.add("open");
-  document.body.style.overflow = 'hidden';
+  phoneContent.classList.add("open");
+  document.body.style.overflow = "hidden";
 });
 
 btnClose.addEventListener("click", (e) => {
   clock.classList.remove("open");
-  document.body.style.overflow = 'auto';
+  phoneContent.classList.remove("open");
+  document.body.style.overflow = "auto";
 });
 
 function updateClock() {
@@ -40,8 +51,6 @@ function updateClock() {
   amPmElement.textContent = amPm;
 }
 
-// Call updateClock every second
 setInterval(updateClock, 1000);
 
-// Initial call to update the clock immediately
 updateClock();

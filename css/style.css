@@ -127,6 +127,9 @@ body .out_border .screen .content .some .block_apps .img_block img {
   width: 44px;
   color: white;
 }
+body .out_border .screen .content .some.open {
+  display: none;
+}
 body .out_border .screen .clock_content {
   display: none;
   flex-direction: column;
