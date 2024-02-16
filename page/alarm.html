@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section class="phone">
+      <div class="container">
+        <div class="out_border">
+          <div class="screen">
+            <div class="alarm" id="alarm">
+                <div class="alarm_content">
+                 <a href="./../index.html">
+                    <button class="close_btn" id="btnClose">
+                        <img src="../img/arrow left.png" alt="" />
+                        <span>Close</span>
+                      </button>
+                 </a>
+  
+                  <div class="alarm_time">
+                    <label for="time">Alarm Time</label>
+                    <div class="tima_table">
+                      <input type="time" name="time" id="time_input" />
+                      <button class="btn_alarm">Set Alarm</button>
+                    </div>
+                  </div>
+                  <audio
+                    id="alarm_audio"
+                    type="audio/mp3"
+                    src="./audio/alarm.wav"
+                  ></audio>
+                  <div class="optional_time">
+                    <button class="btn_snooze"></button>
+                    <button class="btn_stopAlarm"></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./../js/alarm.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/krill.js"></script>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

@@ -205,87 +205,6 @@ body {
       .clock_content.open {
         display: flex;
       }
-      .alarm {
-        display: none;
-        .alarm_content {
-          display: flex;
-          align-items: start;
-          height: 500px;
-          justify-content: space-between;
-          flex-direction: column;
-          padding: 16px;
-          button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            padding: 3px 4px;
-            border: 0;
-            background-color: rgba(0, 72, 255, 0.415);
-            font-family: Rubik;
-            font-size: medium;
-            font-weight: 700;
-            border-radius: 6px;
-            padding: 4px;
-            color: aliceblue;
-            cursor: pointer;
-            img {
-              width: 16px;
-              height: 12px;
-            }
-          }
-          .alarm_time {
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            flex-direction: column;
-            height: 120px;
-            position: relative;
-            left: -16px;
-            width: 303px;
-            padding: 10px;
-            gap: 12px;
-            background-color: #c7bebe94;
-            label {
-              font-family: Rubik;
-              font-size: 22px;
-              color: aliceblue;
-              font-weight: 400;
-            }
-            .tima_table {
-              display: flex;
-              gap: 18px;
-              justify-content: space-between;
-              align-items: center;
-              input {
-                font-size: 16px;
-                font-family: Rubik;
-                font-weight: 400;
-                outline: none;
-                border: 0;
-                width: 120px;
-                height: 40px;
-                padding: 6px;
-                border-radius: 6px;
-                background-color: aliceblue;
-              }
-              .btn_alarm {
-                display: flex;
-                align-items: center;
-                width: 120px;
-                height: 40px;
-                padding: 6px;
-                border-radius: 6px;
-                transition: all 0.4s;
-              }
-              .btn_alarm:hover {
-                background-color: rgb(47, 106, 255);
-                color: rgb(17, 255, 0);
-              }
-            }
-          }
-        }
-      }
 
       @keyframes bg {
         0% {
@@ -308,6 +227,118 @@ body {
         }
         100% {
           background-image: url(./../img/bg_5.jpg);
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: black;
+  .out_border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: black;
+    height: 585px;
+    width: 339px;
+    margin-top: 50px;
+    border: 8px solid gray;
+    border-radius: 42px;
+    .screen {
+      display: flex;
+      align-items: start;
+      background-color: aliceblue;
+      height: 550px;
+      width: 303px;
+      margin: 0 auto;
+      border-radius: 26px;
+      background-image: url(./../img/bg_1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: padding-box;
+      animation-name: bg;
+      animation-duration: 35s;
+      animation-iteration-count: infinite;
+    } .alarm {
+      display: block;
+      .alarm_content {
+        display: flex;
+        align-items: start;
+        height: 500px;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 16px;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          padding: 3px 4px;
+          border: 0;
+          background-color: rgba(0, 72, 255, 0.415);
+          font-family: Rubik;
+          font-size: medium;
+          font-weight: 700;
+          border-radius: 6px;
+          padding: 4px;
+          color: aliceblue;
+          cursor: pointer;
+          img {
+            width: 16px;
+            height: 12px;
+          }
+        }
+        .alarm_time {
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
+          height: 120px;
+          position: relative;
+          left: -16px;
+          width: 303px;
+          padding: 10px;
+          gap: 12px;
+          background-color: #c7bebe94;
+          label {
+            font-family: Rubik;
+            font-size: 22px;
+            color: aliceblue;
+            font-weight: 400;
+          }
+          .tima_table {
+            display: flex;
+            gap: 18px;
+            justify-content: space-between;
+            align-items: center;
+            input {
+              font-size: 16px;
+              font-family: Rubik;
+              font-weight: 400;
+              outline: none;
+              border: 0;
+              width: 120px;
+              height: 40px;
+              padding: 6px;
+              border-radius: 6px;
+              background-color: aliceblue;
+            }
+            .btn_alarm {
+              display: flex;
+              align-items: center;
+              width: 120px;
+              height: 40px;
+              padding: 6px;
+              border-radius: 6px;
+              transition: all 0.4s;
+            }
+            .btn_alarm:hover {
+              background-color: rgb(47, 106, 255);
+              color: rgb(17, 255, 0);
+            }
+          }
         }
       }
     }

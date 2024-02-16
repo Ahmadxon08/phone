@@ -200,87 +200,6 @@ body .out_border .screen .clock_content .clock .hours .elp span {
 body .out_border .screen .clock_content.open {
   display: flex;
 }
-body .out_border .screen .alarm {
-  display: none;
-}
-body .out_border .screen .alarm .alarm_content {
-  display: flex;
-  align-items: start;
-  height: 500px;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 16px;
-}
-body .out_border .screen .alarm .alarm_content button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 3px 4px;
-  border: 0;
-  background-color: rgba(0, 72, 255, 0.415);
-  font-family: Rubik;
-  font-size: medium;
-  font-weight: 700;
-  border-radius: 6px;
-  padding: 4px;
-  color: aliceblue;
-  cursor: pointer;
-}
-body .out_border .screen .alarm .alarm_content button img {
-  width: 16px;
-  height: 12px;
-}
-body .out_border .screen .alarm .alarm_content .alarm_time {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  height: 120px;
-  position: relative;
-  left: -16px;
-  width: 303px;
-  padding: 10px;
-  gap: 12px;
-  background-color: rgba(199, 190, 190, 0.5803921569);
-}
-body .out_border .screen .alarm .alarm_content .alarm_time label {
-  font-family: Rubik;
-  font-size: 22px;
-  color: aliceblue;
-  font-weight: 400;
-}
-body .out_border .screen .alarm .alarm_content .alarm_time .tima_table {
-  display: flex;
-  gap: 18px;
-  justify-content: space-between;
-  align-items: center;
-}
-body .out_border .screen .alarm .alarm_content .alarm_time .tima_table input {
-  font-size: 16px;
-  font-family: Rubik;
-  font-weight: 400;
-  outline: none;
-  border: 0;
-  width: 120px;
-  height: 40px;
-  padding: 6px;
-  border-radius: 6px;
-  background-color: aliceblue;
-}
-body .out_border .screen .alarm .alarm_content .alarm_time .tima_table .btn_alarm {
-  display: flex;
-  align-items: center;
-  width: 120px;
-  height: 40px;
-  padding: 6px;
-  border-radius: 6px;
-  transition: all 0.4s;
-}
-body .out_border .screen .alarm .alarm_content .alarm_time .tima_table .btn_alarm:hover {
-  background-color: rgb(47, 106, 255);
-  color: rgb(17, 255, 0);
-}
 @keyframes bg {
   0% {
     background-image: url(./../img/bg_1.jpg);
@@ -303,4 +222,117 @@ body .out_border .screen .alarm .alarm_content .alarm_time .tima_table .btn_alar
   100% {
     background-image: url(./../img/bg_5.jpg);
   }
+}
+
+body {
+  background-color: black;
+}
+body .out_border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: black;
+  height: 585px;
+  width: 339px;
+  margin-top: 50px;
+  border: 8px solid gray;
+  border-radius: 42px;
+}
+body .out_border .screen {
+  display: flex;
+  align-items: start;
+  background-color: aliceblue;
+  height: 550px;
+  width: 303px;
+  margin: 0 auto;
+  border-radius: 26px;
+  background-image: url(./../img/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  animation-name: bg;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+body .out_border .alarm {
+  display: block;
+}
+body .out_border .alarm .alarm_content {
+  display: flex;
+  align-items: start;
+  height: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 16px;
+}
+body .out_border .alarm .alarm_content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 4px;
+  border: 0;
+  background-color: rgba(0, 72, 255, 0.415);
+  font-family: Rubik;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 4px;
+  color: aliceblue;
+  cursor: pointer;
+}
+body .out_border .alarm .alarm_content button img {
+  width: 16px;
+  height: 12px;
+}
+body .out_border .alarm .alarm_content .alarm_time {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 120px;
+  position: relative;
+  left: -16px;
+  width: 303px;
+  padding: 10px;
+  gap: 12px;
+  background-color: rgba(199, 190, 190, 0.5803921569);
+}
+body .out_border .alarm .alarm_content .alarm_time label {
+  font-family: Rubik;
+  font-size: 22px;
+  color: aliceblue;
+  font-weight: 400;
+}
+body .out_border .alarm .alarm_content .alarm_time .tima_table {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .out_border .alarm .alarm_content .alarm_time .tima_table input {
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 400;
+  outline: none;
+  border: 0;
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: aliceblue;
+}
+body .out_border .alarm .alarm_content .alarm_time .tima_table .btn_alarm {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+body .out_border .alarm .alarm_content .alarm_time .tima_table .btn_alarm:hover {
+  background-color: rgb(47, 106, 255);
+  color: rgb(17, 255, 0);
 }/*# sourceMappingURL=style.css.map */
